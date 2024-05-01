@@ -87,7 +87,7 @@ app.delete('/api/products/:id', async(req,res)=>{
 });
 
 
-mongoose.connect("mongodb+srv://karthikkarthik2522:SkgVq26bD900sthx@backenddb.oaohnco.mongodb.net/Node-API?retryWrites=true&W=majority")
+mongoose.connect("mongodb+srv://<Username>:<Password>@backenddb.oaohnco.mongodb.net/Node-API?retryWrites=true&W=majority")
   .then(() => {
     console.log('Connected to Database!');
     app.listen(3000, ()=>{
